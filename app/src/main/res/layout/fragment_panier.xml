@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    tools:context=".PanierFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+    <soup.neumorphism.NeumorphImageView
+
+        android:id="@+id/ppexit"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="65dp"
+
+
+        android:layout_height="65dp"
+        android:src="@drawable/lefttt"
+        app:neumorph_lightSource="leftTop"
+
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+
+        app:neumorph_shapeType="basin"
+
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="My Cart "
+        android:textAllCaps="false"
+
+        android:textColor="@color/primary"
+        android:textSize="22sp"
+
+
+        android:layout_marginStart="8sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/neumorphImageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout_editor_absoluteX="-84dp"
+        tools:layout_editor_absoluteY="65dp">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPanier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="8sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/panier_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:src="@drawable/sh_cart"
+        android:text="Panier vide"
+
+        android:visibility="gone"
+        android:layout_marginTop="150dp"
+
+        />
+    <TextView
+        android:id="@+id/panier_vide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Cart is Empty"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="17sp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:id="@+id/pick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        android:gravity="center_horizontal"
+
+        android:visibility="gone"
+        tools:ignore="InvalidId">
+        <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Somthing From "
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="17sp"
+
+       />
+        <TextView
+            android:id="@+id/redirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here "
+            android:textAllCaps="false"
+
+            android:textColor="@color/primary"
+            android:textSize="17sp"
+
+            tools:ignore="DuplicateIds" /></LinearLayout>
+
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lprice"
+                android:layout_marginStart="20sp"
+                android:visibility="gone"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="60sp"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prix total:"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+
+
+                android:textSize="17sp"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000DA"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+android:layout_marginStart="8sp"
+
+
+
+
+
+                android:layout_gravity="start"
+                android:textSize="17sp"
+                tools:ignore="MissingConstraints" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/valider_panier"
+
+
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:layout_margin="0dp"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+
+
+        android:text="valider le panier"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:neumorph_backgroundColor="@color/black"
+        app:neumorph_lightSource="leftTop"
+
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphButton>
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/vider_panier"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+
+
+        android:text="vider le panier"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+
+
+
+
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+
+        android:layout_margin="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:neumorph_backgroundColor="@color/black"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowElevation="1dp"
+
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+        app:neumorph_shapeType="flat"
+        android:visibility="gone"
+
+        tools:ignore="MissingConstraints">
+
+    </soup.neumorphism.NeumorphButton>
+</androidx.constraintlayout.widget.ConstraintLayout>

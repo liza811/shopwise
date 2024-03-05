@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+
+    android:id="@+id/panier_card"
+    app:neumorph_shadowElevation="1dp"
+
+
+    style="@style/Widget.Neumorph.CardView"
+    app:neumorph_lightSource="leftTop"
+    app:neumorph_shapeType="flat"
+
+    app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/pan_image"
+        android:layout_width="130dp"
+        android:layout_height="75dp"
+
+        android:layout_marginStart="5dp"
+
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/shopwise"
+
+
+
+       />
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_weight="1"
+     >
+    <TextView
+        android:id="@+id/pan_titre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginStart="8dp"
+        android:text="titre de publication"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:textSize="13sp"/>
+    <TextView
+        android:id="@+id/pan_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:text="prix"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:textSize="13sp"/>
+
+   </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+   android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="2dp"
+            android:gravity="end"
+            >
+            <TextView
+
+            android:id="@+id/croix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|bottom"
+
+
+
+
+
+                android:text="X"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/pan_id_utilisateur"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+
+android:visibility="gone"
+
+                android:text="t"
+
+                android:textColor="@color/text_color"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/pan_id_publication"
+
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+
+
+
+
+                android:text="x"
+
+                android:textSize="13sp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</soup.neumorphism.NeumorphCardView>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<soup.neumorphism.NeumorphCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/bss"
+    android:layout_margin="0dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Neumorph.CardView"
+    app:neumorph_lightSource="leftTop"
+android:background="@color/primary"
+    app:neumorph_backgroundColor="#F4F4F4"
+    app:neumorph_shapeType="flat"
+
+
+
+
+    app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+    android:layout_height="wrap_content"
+    android:outlineProvider="background"
+    app:neumorph_shadowColorDark="@color/black"
+    app:neumorph_shadowColorLight="@color/black"
+    android:clipToOutline="true">
+    <TextView
+        android:id="@+id/categorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+
+        android:layout_margin="8dp"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:textSize="23dp"
+
+
+        android:layout_gravity="center_horizontal"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:id="@+id/beaute"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/categorie">
+<ImageView
+    android:layout_width="41dp"
+    android:layout_height="41dp"
+    android:src="@drawable/perfume"
+    android:padding="8dp"
+    android:layout_marginEnd="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:textColor="@color/text_color"
+
+            android:text="Cosmetiques et Beauté"></TextView>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:id="@+id/vete_bm"
+        app:layout_constraintTop_toBottomOf="@+id/beaute"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="85dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/cloth"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:textColor="@color/text_color"
+
+            android:text="Vêtements"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:id="@+id/imm_bm"
+        app:layout_constraintTop_toBottomOf="@+id/vetement"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp"
+        >
+        <ImageView
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:src="@drawable/house"
+            android:padding="5dp"
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:textColor="@color/text_color"
+
+            android:text="Immobilier"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:id="@+id/ele_bm"
+        app:layout_constraintTop_toBottomOf="@+id/vetement"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="175dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:src="@drawable/washing"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:textColor="@color/text_color"
+
+            android:text="Electronique et Electroménager"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:id="@+id/auto_bm"
+        app:layout_constraintTop_toBottomOf="@+id/vetement"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="220dp"
+        android:paddingStart="14dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/car"
+            android:padding="5dp"
+            android:paddingStart="-3dp"
+            android:layout_marginEnd="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:textColor="@color/text_color"
+
+            android:text="Automobile"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:id="@+id/info_bm"
+        app:layout_constraintTop_toBottomOf="@+id/vetement"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="310dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/devices"
+            android:padding="7dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="8dp"
+    android:text="Informatique"
+            android:textColor="@color/text_color"
+
+            android:textSize="18dp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:id="@+id/piece_bm"
+
+        app:layout_constraintTop_toBottomOf="@+id/vetement"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="265dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/puzzle"
+            android:padding="8dp"
+            android:layout_marginStart="2dp"
+
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="8dp"
+
+            android:textColor="@color/text_color"
+
+            android:textSize="18dp"
+
+            android:text="Pièces détachées"></TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="4dp"
+      android:backgroundTint="@color/primary"
+        android:background="@drawable/rounde"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="370dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+</soup.neumorphism.NeumorphCardView>

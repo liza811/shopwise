@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".continuer_inscription">
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/exit6"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+
+
+        android:src="@drawable/lefttt"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+
+        app:neumorph_shapeType="basin"
+
+        tools:ignore="MissingConstraints"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10sp"
+
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/exit6"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:hint="Numéro telephone"
+            android:padding="0dp"
+            android:gravity="center_horizontal"
+            app:boxStrokeColor="@color/text_color"
+
+
+            app:hintTextColor="@color/text_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/num_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:inputType="number"
+                android:textColor="@color/text_color"
+                android:textSize="17dp"
+                android:drawableStart="@drawable/baseline_local_phone_24"
+                android:drawablePadding="12sp"
+
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <soup.neumorphism.NeumorphButton
+
+            android:id="@+id/ajouterr"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="20sp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+
+            android:text="Ajouter"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:neumorph_backgroundColor="@color/black"
+            app:neumorph_lightSource="leftTop"
+
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearncee"
+            app:neumorph_shapeType="flat">
+
+        </soup.neumorphism.NeumorphButton>
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/borders_primary"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:padding="8sp"
+
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:textSize="17sp"
+            android:lineSpacingExtra="7sp"
+            android:text="Utlilisez un numéro de téléphone local il servira à l'activation de votre compte \nPar défaut ce numéro sera affiché sur l'application."/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

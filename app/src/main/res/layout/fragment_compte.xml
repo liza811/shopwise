@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F3"
+    android:orientation="vertical"
+    tools:context=".CompteFragment">
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/exit"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        style="@style/Widget.Neumorph.CardView"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shapeType="basin"
+        android:background="@drawable/lefttt"
+        android:backgroundTint="@color/text_color"
+        android:src="@drawable/left"
+
+
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+        tools:ignore="MissingConstraints"
+
+        />
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        style="@style/Widget.Neumorph.CardView"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shapeType="flat"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+        android:gravity="center_horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon Espace Membre"
+            android:layout_gravity="center"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:textSize="22dp"/>
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+   <soup.neumorphism.NeumorphCardView
+       android:layout_width="340dp"
+       android:layout_height="220dp"
+       android:layout_marginStart="13dp"
+       android:layout_marginTop="120dp"
+       android:layout_margin="15dp"
+       android:paddingBottom="12sp"
+       style="@style/Widget.Neumorph.CardView"
+       app:neumorph_lightSource="leftTop"
+       app:neumorph_shapeType="flat"
+
+       app:neumorph_shapeAppearance="@style/CustomShapeAppearnce">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Annonces"
+           android:textSize="16dp"
+           android:textStyle="bold"
+
+           android:layout_marginStart="12dp"
+           android:textColor="@color/text_color"
+           android:layout_marginTop="10dp"/>
+       <ImageView
+           android:layout_width="300dp"
+           android:layout_height="90dp"
+           android:layout_gravity="center_horizontal"
+           android:src="@drawable/baseline_volume_down_24"
+           android:paddingTop="0dp"
+           android:layout_marginTop="50dp"/>
+
+       <Button
+           android:id="@+id/ajouterAnnonce"
+           android:layout_width="match_parent"
+           android:layout_height="55dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginStart="20dp"
+           android:layout_marginTop="140dp"
+           android:layout_marginEnd="20dp"
+           android:layout_marginBottom="12dp"
+           android:textAllCaps="false"
+           android:backgroundTint="@color/black"
+           android:paddingStart="0dp"
+
+           android:text=" + Ajouter une annonce"
+           android:textColor="@color/white" />
+   </soup.neumorphism.NeumorphCardView>
+
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

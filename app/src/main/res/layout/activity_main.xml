@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F3"
+
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:id="@+id/cl">
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/skip"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Passer"
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+
+
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="285sp"
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="0dp">
+
+
+        <soup.neumorphism.NeumorphTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ShopWise"
+            android:textColor="#F0F0F3"
+            android:textSize="63dp"
+            android:layout_marginTop="100dp"
+            android:textStyle="bold"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+            app:neumorph_shadowColorDark="@color/dark_shadow"
+            app:neumorph_shadowColorLight="@color/light_shadow"></soup.neumorphism.NeumorphTextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/ll"
+
+        android:paddingTop="0dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="BienVenue"
+            android:textColor="@color/primary"
+            android:textSize="40sp"
+            android:textStyle="bold"
+
+
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="80dp"/>
+
+
+
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/connecterbtn"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="80dp"
+            android:text="Se Connecter"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            app:neumorph_lightSource="leftTop"
+
+
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"></soup.neumorphism.NeumorphButton>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/inscriptionbtn"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="S'inscrire"
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            app:neumorph_lightSource="leftTop"
+
+
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"></soup.neumorphism.NeumorphButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

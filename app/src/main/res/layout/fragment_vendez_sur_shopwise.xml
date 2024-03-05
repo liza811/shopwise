@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Vendez_sur_shopwise">
+
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <soup.neumorphism.NeumorphImageView
+                android:id="@+id/vexit"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                style="@style/Widget.Neumorph.CardView"
+                app:neumorph_lightSource="leftTop"
+                app:neumorph_shapeType="basin"
+                android:background="@drawable/lefttt"
+                android:backgroundTint="@color/text_color"
+                android:src="@drawable/left"
+
+
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+                tools:ignore="MissingConstraints"
+
+                />
+
+
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="10dp"
+            style="@style/Widget.Neumorph.CardView"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shapeType="flat"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+            android:gravity="center_horizontal"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/vendezz"></ImageView>
+        </soup.neumorphism.NeumorphCardView>
+
+
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Neumorph.CardView"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shapeType="flat"
+
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+            android:paddingTop="8dp"
+            android:background="#F0F0F3"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <ImageView
+
+                android:layout_width="290dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:scaleType="fitXY"
+
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/etape1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="170dp"
+                android:layout_marginStart="12dp"
+                android:text="  Etape1:  Enregistrez vous en moins de "
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="16sp"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="195dp"
+
+                android:text=" 5 minutes"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="16sp"/>
+            <TextView
+
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="220dp"
+                android:layout_marginStart="12dp"
+                android:text="Remplissez le formulaire. Lisez et acceptez les "
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="13sp"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="245dp"
+
+                android:text="conditions générales"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+            android:textColor="@color/text_color"
+                android:textSize="13sp"/>
+
+
+
+        </soup.neumorphism.NeumorphCardView>
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Neumorph.CardView"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shapeType="flat"
+
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+            android:paddingTop="8dp"
+            android:background="#F0F0F3"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+        <ImageView
+
+            android:layout_width="290dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
+            android:scaleType="fitXY"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/etape2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="12dp"
+            android:text="   Etape1:  Mettez vos produits en ligne  "
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="16sp"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="195dp"
+
+            android:text=" etcommencez à vendre!"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="16sp"/>
+        <TextView
+
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="12dp"
+            android:text="Plus vous mettrez de produits en ligne plus vous"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:textSize="13sp"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="245dp"
+
+            android:text="vendez"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:textSize="13sp"/></soup.neumorphism.NeumorphCardView>
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+
+            android:layout_marginTop="10dp"
+            style="@style/Widget.Neumorph.CardView"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shapeType="flat"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AIDE AUX VENDEURS"
+                android:layout_gravity="center"
+                android:textColor="@color/text_color"
+
+
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+
+
+        </soup.neumorphism.NeumorphCardView>
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Neumorph.CardView"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shapeType="flat"
+
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+            android:paddingTop="8dp"
+            android:background="#F0F0F3"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+
+
+            <TextView
+
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"
+                android:text="Créez vos produits"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="16sp"/>
+
+            <TextView
+
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="12dp"
+                android:lineSpacingExtra="7sp"
+                android:layout_marginBottom="8dp"
+                android:text="Créer un bon contenu lorsque vous mettez vos articles en ligne est une étape importante pour obtenir plus de ventes. Des images de qualité et des descriptions détaillées incitent vos clients à cliquer sur vos produits et à les acheter."
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="13sp"/>
+            <soup.neumorphism.NeumorphImageView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                app:neumorph_shapeType="flat"
+                android:layout_marginTop="150dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+
+                app:neumorph_shapeAppearance="@style/round_pic"
+                android:src="@drawable/creez"/>
+           </soup.neumorphism.NeumorphCardView>
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Neumorph.CardView"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shapeType="flat"
+
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+            android:paddingTop="8dp"
+            android:background="#F0F0F3"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+
+
+            <TextView
+
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"
+                android:text="Vos paiements"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="16sp"/>
+
+            <TextView
+
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="12dp"
+
+                android:layout_marginBottom="8dp"
+                android:lineSpacingExtra="7sp"
+                android:text="Il n’y a pas de frais pour mettre en ligne vos articles. Il ne vous est rien demandé de payer avant la vente de votre premier article."
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="13sp"/>
+            <soup.neumorphism.NeumorphImageView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                app:neumorph_shapeType="flat"
+                android:layout_marginTop="120dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="8dp"
+
+                app:neumorph_shapeAppearance="@style/round_pic"
+                android:src="@drawable/paiement"/>
+        </soup.neumorphism.NeumorphCardView>
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Neumorph.CardView"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shapeType="flat"
+
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+            android:paddingTop="8dp"
+            android:background="#F0F0F3"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+
+
+            <TextView
+
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"
+                android:text="Gérez vos livraisons"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="16sp"/>
+
+            <TextView
+
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="12dp"
+                android:lineSpacingExtra="7sp"
+                android:layout_marginBottom="8dp"
+                android:text="Gérez vos livraisons dans les temps est un aspect essentiel de la satisfaction de vos clients finaux. Un client satisfait est un client qui revient."
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="13sp"/>
+            <soup.neumorphism.NeumorphImageView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                app:neumorph_shapeType="flat"
+                android:layout_marginTop="120dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="8dp"
+
+                app:neumorph_shapeAppearance="@style/round_pic"
+                android:src="@drawable/delev"/>
+        </soup.neumorphism.NeumorphCardView>
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Neumorph.CardView"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shapeType="flat"
+
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+            android:paddingTop="8dp"
+            android:background="#F0F0F3"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+
+
+            <TextView
+
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"
+                android:text="Augmentez vos ventes"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="16sp"/>
+
+            <TextView
+
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="12dp"
+                android:lineSpacingExtra="7sp"
+                android:layout_marginBottom="8dp"
+                android:text="Il y a beaucoup de moyens d’augmenter vos ventes. En plus de proposer des produits à des prix compétitifs vous pouvez participer aux promotions Jumia et ainsi faire gagner de la visibilité à votre boutique."
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="13sp"/>
+            <soup.neumorphism.NeumorphImageView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                app:neumorph_shapeType="flat"
+                android:layout_marginTop="160dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="8dp"
+
+                app:neumorph_shapeAppearance="@style/round_pic"
+                android:src="@drawable/gmenter"/>
+        </soup.neumorphism.NeumorphCardView>
+        <TextView
+
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="12dp"
+            android:lineSpacingExtra="7sp"
+            android:layout_marginBottom="8dp"
+            android:text="Pourquoi vendre sur Shopwise ?"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:lineSpacingExtra="7sp"
+            android:layout_marginBottom="8dp"
+            android:text="Sur Shopwise Algérie, vous pouvez créer votre propre boutique en ligne et commencer à vendre sur internet vos produits à travers toute de nombreuses wilayas en Algérie grâce à notre expertise marketing et logistique."
+            android:textColor="@color/text_color"
+            android:textSize="12sp"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:lineSpacingExtra="7sp"
+            android:layout_marginBottom="8dp"
+            android:text="Quels sont les produits que je peux vendre sur Shopwise?"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:lineSpacingExtra="7sp"
+            android:layout_marginBottom="8dp"
+            android:text="Vous pouvez proposer une large gamme de produits étalée sur de multiples et diverses catégories: téléphones et tablettes, produits de mode, maison et bureau, informatique, appareils photo, électronique, montres, lunettes de soleil, produits pour bébés et enfants, jouets, santé et beauté, automobile."
+            android:textColor="@color/text_color"
+            android:textSize="12sp"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:lineSpacingExtra="7sp"
+            android:layout_marginBottom="8dp"
+            android:text="Quels sont les produits que je ne peux pas vendre sur Shopwise?"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:lineSpacingExtra="7sp"
+            android:layout_marginBottom="8dp"
+            android:text="Vous ne pouvez pas vendre sur Shopwise des articles non-authentiques, de la contrefaçon ou des articles illégaux. Tous les articles que vous vendez doivent être totalement nouveaux et en parfait état (produits et emballage)."
+            android:textColor="@color/text_color"
+            android:textSize="12sp"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:lineSpacingExtra="7sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Créez votre boutique en ligne : Inscription facile et gratuite"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:lineSpacingExtra="7sp"
+            android:layout_marginBottom="8dp"
+            android:text="S’inscrire en tant que vendeur sur Shopwise et créer une boutique en ligne d’e-commerce, c’est facile, gratuit et cela ne vous prendra que 5 petites minutes ! Pour accéder au formulaire d’inscription, puis remplissez les champs d’information demandés.  Ainsi, ça vous épaule dans la mise en place de votre boutique en ligne sur Shopwise !"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

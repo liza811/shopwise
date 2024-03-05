@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ShopWise</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="acceuil">acceuil</string>
+    <string name="categorie">categorie</string>
+    <string name="panier">panier</string>
+    <string name="compte">compte</string>
+    <string name="success">Success!</string>
+    <string name="password_changed">Your Password has been changed!</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="enter_email">Enter your account\'s email to reset  password</string>
+    <string name="verify_email">Verify your email address </string>
+    <string name="enter_verification_code">Enter verification code sent at </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

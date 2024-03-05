@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#F0F0F3</color>
+    <color name="black">#1B1A1A</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_color">#515459</color>
+    <color name="shadow_dark">#A9A9A9</color>
+    <color name="light_background">#ECF0F3</color>
+    <!--custom colors-->
+    <color name="primary">	#4D74B5</color>
+    <color name="backgroud">#E4EBF5</color>
+    <color name="dark_shadow">#CDD5EA</color>
+    <color name="light_shadow">#F8F9FE</color>
+    <color name="primary_text">#0B0D0C</color>
+    <color name="secondary_text">#7D818A</color>
+
+
+</resources>

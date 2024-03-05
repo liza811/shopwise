@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    tools:context=".Message">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="#F0F0F3">
+
+        <TextView
+android:id="@+id/nomlogo"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_gravity="left|center_vertical"
+
+            android:layout_marginStart="16sp"
+            android:background="@drawable/profile_logo1"
+            android:gravity="center"
+            android:text="L"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+android:id="@+id/nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginStart="70sp"
+            android:text="liza_25"
+
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mPub_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginStart="160sp"
+            android:text="liza_25"
+            android:textColor="@color/black"
+
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/mut_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginStart="190sp"
+            android:text="liza_25"
+
+            android:textColor="@color/black"
+
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="15sp"
+            android:fontFamily="@font/baloo"
+            android:text="X"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginBottom="50sp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_gravity="end"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="20sp"
+                android:background="@drawable/borders"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mImage"
+                    android:layout_width="200dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:scaleType="fitXY"
+
+                    android:src="@drawable/myshopmod" />
+
+                <TextView
+                    android:id="@+id/mPubtitle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="5sp"
+
+                    android:gravity="start"
+                    android:text="titre de pub"
+
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginTop="12sp"
+                android:layout_marginEnd="8sp"
+                android:gravity="end"
+                android:text="titre de pub"
+
+                android:textSize="15sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RVMessage"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l"
+                android:layout_marginTop="20sp"
+
+                android:layout_marginBottom="10sp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+
+            android:id="@+id/message"
+
+            android:layout_width="285dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginStart="15sp"
+            android:background="@drawable/round"
+            android:backgroundTint="@color/dark_shadow"
+            android:gravity="start|center_vertical"
+            android:hint="Ecrire..."
+
+            android:paddingStart="17sp"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/send"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginStart="15sp"
+            android:background="@drawable/baseline_send_24"
+
+
+            android:backgroundTint="@color/text_color" />
+    </LinearLayout>
+
+
+</RelativeLayout>

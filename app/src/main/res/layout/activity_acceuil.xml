@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:circularflow_angles="0dp"
+    app:circularflow_defaultAngle="0"
+    app:circularflow_defaultRadius="50dp"
+    android:background="#F4F4F4"
+    app:circularflow_radiusInDP="50dp"
+    tools:context=".acceuilActivity">
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/neumorphCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </FrameLayout>
+
+
+    <soup.neumorphism.NeumorphCardView
+
+        android:id="@+id/neumorphCardView"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+
+        app:barrierMargin="0dp"
+        app:circularflow_angles="10dp"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shapeType="flat"
+
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5sp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/devider"
+            app:layout_constraintTop_toTopOf="@+id/neumorphCardView"
+            tools:ignore="MissingConstraints"></View>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+           android:id="@+id/bnv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="@android:color/transparent"
+
+            android:background="#F4F4F4"
+            android:paddingBottom="0dp"
+            app:elevation="0dp"
+            app:itemIconTint="@color/colorr"
+            app:itemTextColor="@color/colorr"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

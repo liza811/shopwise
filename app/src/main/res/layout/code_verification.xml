@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+    android:padding="0dp"
+    android:layout_margin="0dp"
+
+   >
+
+    <ImageView
+        android:layout_width="30sp"
+        android:layout_height="40dp"
+
+
+        android:layout_marginStart="12sp"
+        android:layout_marginTop="20sp"
+        android:src="@drawable/left_arrow"></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+
+        android:orientation="vertical"
+
+        android:gravity="center_horizontal"
+
+     >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:src="@drawable/open_email"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+
+            android:text="@string/verify_email"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+
+            android:textSize="24sp"
+            android:layout_marginTop="22sp"
+
+
+
+           />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+
+            android:gravity="center_horizontal"
+            android:text="@string/enter_verification_code"
+            android:textAllCaps="false"
+            android:textColor="@color/shadow_dark"
+
+            android:textSize="15sp"
+            android:layout_marginTop="13sp"
+           />
+
+        <TextView
+android:id="@+id/emaill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+
+            android:gravity="center_horizontal"
+            android:text="email@gmail.com"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+
+            android:textSize="16sp"
+            android:layout_marginTop="7sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+
+
+            android:orientation="horizontal"
+
+            android:gravity="center_horizontal"
+
+            >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            android:layout_gravity="center_horizontal"
+
+
+            android:layout_marginEnd="15dp"
+
+
+            android:focusable="false"
+            android:focusedByDefault="false"
+
+
+
+            app:boxStrokeColor="@color/black"
+
+
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/code1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_light_blue"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:backgroundTint="@color/dark_shadow"
+                android:inputType="number"
+                android:defaultFocusHighlightEnabled="true"
+                android:focusable="true"
+                android:maxLength="1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                android:focusedByDefault="true"
+                android:textCursorDrawable="@drawable/cursor"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_gravity="center_horizontal"
+
+
+                android:layout_marginEnd="15dp"
+
+                app:hintTextColor="@color/black"
+                android:focusable="false"
+                android:focusedByDefault="false"
+
+
+
+                app:boxStrokeColor="@color/black"
+
+
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/code2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_light_blue"
+                    android:layout_margin="0dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/dark_shadow"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:focusedByDefault="false"
+                    android:textCursorDrawable="@drawable/cursor"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_gravity="center_horizontal"
+
+
+                android:layout_marginEnd="15dp"
+
+                app:hintTextColor="@color/black"
+                android:focusable="false"
+                android:focusedByDefault="false"
+
+
+
+                app:boxStrokeColor="@color/black"
+
+
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/code3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_light_blue"
+                    android:layout_margin="0dp"
+                    android:gravity="center"
+
+                    android:backgroundTint="@color/dark_shadow"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:inputType="number"
+android:layout_marginEnd="15dp"
+                    android:textColor="@color/black"
+
+                    android:focusedByDefault="false"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:maxLength="1"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_gravity="center_horizontal"
+
+
+
+
+                app:hintTextColor="@color/black"
+                android:focusable="false"
+                android:focusedByDefault="false"
+
+
+
+                app:boxStrokeColor="@color/black"
+
+
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/code4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_light_blue"
+                    android:layout_margin="0dp"
+android:gravity="center"
+                    android:backgroundTint="@color/dark_shadow"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:inputType="number"
+
+                    android:textColor="@color/black"
+
+                    android:focusedByDefault="false"
+                    android:textCursorDrawable="@drawable/cursor"
+android:maxLength="1"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/verify"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35sp"
+            android:foregroundGravity="center"
+            android:background="@drawable/button_round"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+
+            android:text="Verify"
+            android:textAllCaps="false"
+            android:textColor="@color/shadow_dark"
+            android:textSize="17sp"
+
+
+
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+        <LinearLayout
+            android:id="@+id/t3"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginStart="12sp"
+            android:layout_marginTop="30sp"
+
+
+>
+
+
+
+        <TextView
+android:id="@+id/TimeLeftTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+
+            android:layout_marginStart="10sp"
+            android:text="Vous ne l'avez pas reçu?"
+            android:textAllCaps="false"
+            android:textColor="@color/shadow_dark"
+            android:textSize="15sp"
+            android:layout_marginTop="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/reenvoyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+
+            android:layout_marginStart="2sp"
+            android:text="Resend Code"
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            android:textSize="15sp"
+            android:layout_marginTop="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

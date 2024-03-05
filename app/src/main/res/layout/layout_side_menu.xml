@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:scrollbars="vertical"
+
+    app:layout_scrollFlags="scroll"
+
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:background="#F4F4F4"
+    android:paddingTop="20dp"
+    android:paddingStart="15dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:background="#F4F4F4"
+
+
+    android:layout_width="360dp"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#F4F4F4"
+
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl3"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        tools:ignore="MissingConstraints">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/devider"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Compte"
+            android:textColor="@color/primary"
+
+            android:paddingLeft="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/connecter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:textSize="17sp"
+            android:text="Se connecter"
+
+
+            android:textColor="@color/text_color"
+android:drawableTint="@color/black"
+            android:drawablePadding="20dp"
+            android:paddingLeft="15dp"
+            android:drawableLeft="@drawable/baseline_person_24"
+            />
+        <TextView
+            android:id="@+id/deconnecter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:textSize="17sp"
+            android:text="Se déconnecter"
+
+            android:visibility="gone"
+            android:textColor="@color/text_color"
+            android:drawableTint="@color/black"
+            android:drawablePadding="20dp"
+            android:paddingLeft="15dp"
+            android:drawableLeft="@drawable/baseline_logout_24" />
+
+
+
+        <TextView
+            android:id="@+id/inscrire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="13dp"
+            android:drawableTint="@color/black"
+            android:textSize="17sp"
+            android:textColor="@color/text_color"
+            android:text="S'inscrire"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/baseline_person_add_24"
+  />
+        <TextView
+            android:id="@+id/parametre"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="13dp"
+            android:visibility="gone"
+            android:drawableTint="@color/black"
+            android:textSize="17sp"
+            android:textColor="@color/text_color"
+            android:text="Parametre de profil"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/baseline_person_24"
+         />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl4"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl3"
+
+        tools:ignore="MissingConstraints">
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/rl3"
+            tools:layout_editor_absoluteX="-2dp"
+
+            tools:ignore="DuplicateIds">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Categories"
+                android:textColor="@color/primary"
+android:layout_marginBottom="18dp"
+                android:paddingLeft="8dp"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+
+            android:layout_gravity="center"
+
+
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/perfume"
+
+                />
+        <TextView
+            android:id="@+id/cos_sm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:textSize="17sp"
+            android:textColor="@color/text_color"
+            android:text="Cosmetique et Beauty"
+
+           >
+        </TextView></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+
+            android:layout_gravity="center"
+
+
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/cloth"
+
+                />
+        <TextView
+            android:id="@+id/vet_sm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Vêtements"
+
+            android:textSize="17sp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/text_color"
+           /></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+
+            android:layout_gravity="center"
+
+
+        >
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/house"
+
+               />
+        <TextView
+            android:id="@+id/imm_sm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="9dp"
+
+            android:text="Immobilier"
+
+
+            android:textSize="17sp"
+
+            android:layout_margin="8dp"
+            android:textColor="@color/text_color"
+ /></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+
+            android:layout_gravity="center"
+
+
+            >
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/washing"
+
+                />
+        <TextView
+            android:id="@+id/ele_sm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="17sp"
+            android:paddingLeft="15dp"
+            android:text=" Electroménager"
+
+            android:textColor="@color/text_color"
+            /></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+
+            android:layout_gravity="center"
+
+
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/car"
+
+                />
+        <TextView
+            android:id="@+id/auto_sm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Automobile"
+            android:paddingLeft="17dp"
+            android:textSize="17sp"
+
+
+
+            android:textColor="@color/text_color"
+            /></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+
+            android:layout_gravity="center"
+
+
+            >
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/puzzle"
+
+                />
+        <TextView
+            android:id="@+id/piece_sm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Pièces détachées"
+
+            android:paddingLeft="17dp"
+            android:textSize="17sp"
+
+            android:textColor="@color/text_color"
+            /></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+
+            android:layout_gravity="center"
+
+
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/devices"
+
+                />
+        <TextView
+            android:id="@+id/info_sm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Informatique"
+
+            android:paddingLeft="16dp"
+            android:textSize="19sp"
+
+            android:textColor="@color/text_color"
+            /></LinearLayout>
+
+
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Nos Services"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="30dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="14dp"
+            android:textSize="19sp"
+            app:layout_constraintTop_toBottomOf="@+id/rl4"
+            android:textStyle="bold"
+
+            tools:ignore="MissingConstraints" />
+    <RelativeLayout
+        android:id="@+id/contacter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl4"
+        app:layout_constraintVertical_bias="0.017"
+        tools:ignore="DuplicateIds">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/text_color"
+            android:textSize="17sp"
+            android:drawableLeft="@drawable/baseline_chat_24"
+            android:drawableTint="@color/black"
+
+            android:drawablePadding="20dp"
+            android:paddingLeft="15dp"
+
+            android:text="Contactez-nous"
+             />
+
+        <ImageView
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_chevron_right_24"
+            android:tint="@color/text_color"
+            tools:ignore="UseAppTint" />
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/vendre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="85dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rl4"
+            app:layout_constraintVertical_bias="0.017"
+            tools:ignore="DuplicateIds">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/text_color"
+                android:textSize="17sp"
+                android:drawableTint="@color/black"
+                android:drawableLeft="@drawable/baseline_sell_24"
+
+                android:drawablePadding="20dp"
+                android:paddingLeft="15dp"
+                android:text="Vendez dur Shopwise"
+                 />
+
+            <ImageView
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_chevron_right_24"
+                android:tint="@color/text_color"
+                tools:ignore="UseAppTint" />
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+</ScrollView>

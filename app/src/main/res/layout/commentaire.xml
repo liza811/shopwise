@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5sp"
+    style="@style/round_card"
+    android:layout_marginStart="5sp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/profile_logo"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+
+        android:layout_marginTop="8sp"
+        android:text="L"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/profile_logo1" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+android:id="@+id/cnom_utilisateur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="liza_25"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="8sp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/cdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05/04/2023"
+                android:gravity="end"
+                android:textColor="@color/secondary_text"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="8sp"
+                android:textSize="14sp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ccommentaire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="commentaire"
+            android:textColor="@color/text_color"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="8sp"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

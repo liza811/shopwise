@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#53889CB3"
+
+
+    app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+
+    >
+
+    <ImageView
+
+        android:layout_width="190dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="22dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:src="@drawable/acheter"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="confirmer votre commande"
+        android:textSize="19sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingEnd="0dp">
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/annuler"
+
+
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end"
+
+        android:background="@android:color/transparent"
+        android:gravity="center"
+
+
+
+        android:text="Annuler"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:neumorph_shadowColorLight="#53889CB3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:neumorph_backgroundColor="@color/black"
+        app:neumorph_lightSource="leftTop"
+
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphButton>
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/confirmer"
+
+
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|start"
+
+        android:background="@android:color/transparent"
+        android:gravity="center"
+
+
+        android:text="Confimer"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:neumorph_backgroundColor="@color/black"
+        app:neumorph_lightSource="leftTop"
+
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphButton>
+    </LinearLayout>
+
+
+</LinearLayout>

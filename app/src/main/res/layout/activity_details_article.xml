@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingStart="0dp"
+    android:id="@+id/activity_details_article"
+    android:paddingEnd="0dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+android:layout_marginTop="8dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="40dp"
+
+
+                android:layout_marginStart="3sp"
+
+                android:src="@drawable/left_arrow"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginEnd="10dp"
+                android:text="Product Details"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                android:textSize="19dp"
+              >
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+                <soup.neumorphism.NeumorphImageView
+                    android:id="@+id/dPubImage"
+                    style="@style/Widget.Neumorph.CardView"
+                    app:neumorph_lightSource="leftTop"
+                    app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+                    app:neumorph_shapeType="flat"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:padding="20dp"
+android:src="@drawable/shopwise"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+app:neumorph_backgroundColor="#F4F4F4"
+
+                    />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="12dp"
+     android:layout_marginEnd="12dp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/dPubTitre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Titre de publication"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+
+android:layout_gravity="start"
+
+            android:textStyle="bold"
+           />
+        <ImageView
+
+            android:layout_gravity="end"
+android:layout_marginLeft="10dp"
+
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+
+
+
+
+
+            android:background="@drawable/baseline_favorite_border_24"
+
+            android:gravity="center"
+
+
+android:backgroundTint="@color/black"
+
+
+
+
+
+
+
+            >
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/dPubPrix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Prix de publication"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:translationZ="20dp"
+             />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/borders_primary"
+                android:gravity="center_horizontal"
+android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/paiement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="17sp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_horizontal"
+                    android:text="Paiement à la livraison"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <soup.neumorphism.NeumorphButton
+
+                        android:id="@+id/acheter"
+                        style="@style/Widget.Neumorph.Button"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:layout_margin="0dp"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/baseline_airport_shuttle_24"
+                        android:drawableTint="@color/white"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:paddingStart="24sp"
+                        android:text="Acheter"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:neumorph_backgroundColor="@color/black"
+                        app:neumorph_lightSource="leftTop"
+
+                        app:neumorph_shapeAppearance="@style/CustomShapeAppearncee"
+                        app:neumorph_shapeType="flat">
+
+                    </soup.neumorphism.NeumorphButton>
+
+                    <soup.neumorphism.NeumorphButton
+
+                        android:id="@+id/panierr"
+
+
+                        style="@style/Widget.Neumorph.Button"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+
+                        android:layout_margin="0dp"
+
+                        android:drawableStart="@drawable/baseline_shopping_cart_24"
+                        android:drawableTint="@color/white"
+                        android:gravity="center"
+
+                        android:text="panier"
+
+                        android:textAllCaps="false"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:neumorph_backgroundColor="@color/black"
+                        app:neumorph_lightSource="leftTop"
+
+                        app:neumorph_shapeAppearance="@style/CustomShapeAppearncee"
+                        app:neumorph_shapeType="flat"
+
+                        tools:ignore="MissingConstraints">
+
+                    </soup.neumorphism.NeumorphButton>
+                </LinearLayout>
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/message"
+
+                    style="@style/Widget.Neumorph.Button"
+                    android:layout_width="170dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5sp"
+                    android:foregroundGravity="center"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/baseline_message_24"
+                    android:drawableTint="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+
+                    android:text="Message"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+
+
+                    app:neumorph_backgroundColor="@color/primary"
+                    app:neumorph_lightSource="leftTop"
+
+                    app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+                    app:neumorph_shapeType="flat">
+
+                </soup.neumorphism.NeumorphButton>
+                </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="8sp"
+                android:drawableStart="@drawable/baseline_description_24"
+                android:drawablePadding="8sp"
+                android:drawableTint="@color/primary"
+                android:text="Description "
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/card5"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5sp"
+                android:layout_marginEnd="5sp"
+                app:neumorph_lightSource="leftTop"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+                app:neumorph_shapeType="flat"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/dPubDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="7sp"
+                    android:padding="8dp"
+
+                    android:text="Description de publication"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+            </soup.neumorphism.NeumorphCardView>
+
+            <TextView
+                android:id="@+id/pubb_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="hhh"
+                android:visibility="invisible"
+                android:textColor="@color/text_color"
+                />
+
+            <TextView
+                android:id="@+id/ut_id"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="hhh"
+                android:visibility="invisible"
+                android:textColor="@color/text_color"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="0sp"
+                android:layout_marginBottom="8sp"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="8sp"
+                android:drawableTint="@color/primary"
+                android:text="Contact et Coordonnés"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <soup.neumorphism.NeumorphCardView
+
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5sp"
+                android:layout_marginEnd="5sp"
+                app:neumorph_lightSource="leftTop"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+                app:neumorph_shapeType="flat"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/dnom_utilisateur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_account_circle_24"
+                    android:drawablePadding="10sp"
+                    android:drawableTint="@color/text_color"
+                    android:padding="10dp"
+                    android:paddingStart="12dp"
+                    android:paddingTop="8dp"
+                    android:text="Nom d'utilisateur"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="49dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="12sp"
+                        android:background="@drawable/baseline_local_phone_24"
+                        android:backgroundTint="@color/text_color" />
+
+                    <TextView
+                        android:id="@+id/dnum_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12sp"
+                        android:background="@drawable/round"
+                        android:backgroundTint="#749ce3"
+                        android:drawablePadding="8sp"
+                        android:padding="8dp"
+                        android:paddingStart="10sp"
+                        android:paddingEnd="10sp"
+
+                        android:text="055962299"
+
+                        android:textColor="@color/text_color"
+
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="12sp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="12sp"
+                        android:background="@drawable/baseline_alternate_email_24"
+                        android:backgroundTint="@color/text_color" />
+
+                    <TextView
+                        android:id="@+id/demail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12sp"
+                        android:background="@drawable/round"
+                        android:backgroundTint="@color/dark_shadow"
+                        android:drawablePadding="8sp"
+                        android:padding="8dp"
+                        android:paddingStart="10sp"
+                        android:paddingEnd="10sp"
+
+                        android:text="lizadjebara@gmail.com"
+
+                        android:textColor="@color/text_color"
+
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </soup.neumorphism.NeumorphCardView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20sp"
+
+    android:layout_marginBottom="8sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+
+                android:drawableStart="@drawable/baseline_message_24"
+                android:drawablePadding="8sp"
+                android:drawableTint="@color/primary"
+                android:text="Questions et Réponses "
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+    <ImageView
+        android:id="@+id/all_comments"
+        android:layout_width="34sp"
+        android:layout_height="34sp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/baseline_chevron_right_24"
+        android:tint="@color/text_color"
+     android:layout_gravity="end"
+        tools:ignore="UseAppTint" />
+</LinearLayout>
+            <soup.neumorphism.NeumorphCardView
+
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5sp"
+                android:layout_marginEnd="5sp"
+                android:paddingBottom="8sp"
+                app:neumorph_lightSource="leftTop"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearnce"
+                app:neumorph_shapeType="flat"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lcom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8sp"
+                        android:layout_marginTop="8sp"
+                        android:layout_marginEnd="8sp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="47sp"
+                            android:layout_height="47sp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/baseline_account_circle_24"
+                            android:backgroundTint="@color/text_color" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/dut_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10sp"
+                                android:text="liza_25"
+                                android:textColor="@color/text_color"
+                                android:textSize="19sp" />
+
+                            <EditText
+                                android:id="@+id/commentaire"
+                                android:layout_width="210dp"
+                                android:layout_height="wrap_content"
+android:textCursorDrawable="@drawable/cursor"
+android:backgroundTint="@color/black"
+                                android:hint="Ajouter un commentaire ..."
+
+                                android:inputType="textMultiLine"
+
+                          android:layout_marginStart="10dp"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color"
+                                android:textSize="15sp"
+
+                                />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/commenter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="5sp"
+
+                            android:background="@drawable/baseline_send_24"
+                            android:backgroundTint="@color/text_color" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/aucun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp"
+                        android:drawablePadding="10sp"
+                        android:padding="10dp"
+                        android:paddingStart="12dp"
+                        android:paddingTop="8dp"
+
+                        android:text="Aucun commentaire pour cette annonce"
+                        android:textColor="@color/text_color"
+
+                        android:textSize="16sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RVCommentaire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp" />
+
+                </LinearLayout>
+            </soup.neumorphism.NeumorphCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="8sp"
+                android:drawableStart="@drawable/baseline_add_business_24"
+                android:drawablePadding="8sp"
+                android:drawableTint="@color/primary"
+                android:text="Annonces du vendeur "
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RVAduvendeur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="8sp"
+                android:drawableStart="@drawable/baseline_volume_down_24"
+                android:drawablePadding="8sp"
+                android:drawableTint="@color/primary"
+                android:text="Annonces similaires "
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RVSimilaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

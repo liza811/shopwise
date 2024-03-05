@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:layout_margin="0dp"
+    tools:context=".Mdp_oublie">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_horizontal"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="40dp"
+
+
+            android:layout_marginStart="12sp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/left_arrow"></ImageView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:foregroundGravity="center_horizontal"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linear"
+        tools:ignore="MissingConstraints">
+
+     <ImageView
+         android:layout_width="120dp"
+         android:layout_height="120dp"
+         android:src="@drawable/forgot"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+
+            android:text="@string/forget_password"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+
+            android:textSize="24sp"
+            android:layout_marginTop="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+
+            android:gravity="center_horizontal"
+            android:text="@string/enter_email"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+
+            android:textSize="16sp"
+            android:layout_marginTop="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Email"
+            app:startIconDrawable="@drawable/baseline_email_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="20dp"
+
+app:startIconTint="@color/black"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+
+            app:hintTextColor="@color/text_color"
+
+
+
+
+
+            app:boxStrokeColor="@color/black"
+         app:boxStrokeWidthFocused="2dp"
+            android:textColorHint="@color/black"
+         
+         >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/memail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:inputType="textEmailAddress"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+
+
+android:textCursorDrawable="@drawable/cursor"
+
+            />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mrechercher"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25sp"
+            android:foregroundGravity="center"
+            android:background="@drawable/button_round"
+            android:fontFamily="sans-serif"
+
+            android:gravity="center"
+
+            android:text="Search"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+
+
+
+          >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

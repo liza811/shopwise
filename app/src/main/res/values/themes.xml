@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <!--custom style-->
+    <style name="CustomShapeAppearnce">
+        <item name="neumorph_cornerFamily">rounded</item>
+
+
+        <!-- Or if wants different radii depending on the corner. -->
+        <item name="neumorph_cornerSizeTopLeft">8dp</item>
+        <item name="neumorph_cornerSizeTopRight">8dp</item>
+        <item name="neumorph_cornerSizeBottomLeft">8dp</item>
+        <item name="neumorph_cornerSizeBottomRight">8dp</item>
+    </style>
+    <style name="round_card">
+        <item name="borderRound">20dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="riv_corner_radius_bottom_right">30dp
+        </item>
+        <item name="android:radius">40dp</item>
+        <item name="android:bottomRightRadius">40dp</item>
+   <item name="background">@color/primary</item>
+
+    </style>
+    <style name="CustomShapeAppearncee">
+        <item name="neumorph_cornerFamily">rounded</item>
+
+
+        <!-- Or if wants different radii depending on the corner. -->
+        <item name="neumorph_cornerSizeTopLeft">10dp</item>
+        <item name="neumorph_cornerSizeTopRight">10dp</item>
+        <item name="neumorph_cornerSizeBottomLeft">10dp</item>
+        <item name="neumorph_cornerSizeBottomRight">10dp</item>
+    </style>
+
+    <style name="round_pic">
+        <item name="neumorph_cornerFamily">rounded</item>
+<item name="iss_corner_radius">20</item>
+
+        <!-- Or if wants different radii depending on the corner. -->
+        <item name="neumorph_cornerSizeTopLeft">10dp</item>
+        <item name="neumorph_cornerSizeTopRight">100dp</item>
+        <item name="neumorph_cornerSizeBottomLeft">100dp</item>
+        <item name="neumorph_cornerSizeBottomRight">100dp</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Remove background -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- Remove shadow -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="CustomBottomSheetDialogThemee" parent="Theme.Design.BottomSheetDialog">
+
+        <item name="android:background">@android:color/transparent</item>
+
+        <item name="android:topLeftRadius">8dp</item>
+        <item name="android:topRightRadius">8dp</item>
+    </style>
+
+
+
+
+</resources>
